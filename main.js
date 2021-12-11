@@ -178,3 +178,19 @@ const appp =(()=>{
 })();
 appp.init()
 //Delicate
+
+
+//call() function
+console.log("call")
+const teacher ={
+    firstName:"Nairubi",
+    lastName:"Cam Tu"
+}
+const me={
+    firstName:"Nguyen Thi",
+    lastName:"Cam Tu",
+    showFullName(){
+        console.log(`${this.firstName} ${this.lastName}`)
+    }
+}
+me.showFullName.call(me);
